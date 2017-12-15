@@ -39,7 +39,7 @@ class UserCell: UITableViewCell {
     // MARK: Private
     
     private func fillPhoto(with user: User) {
-        let serviceForFetchingImage = ServiceForFetchingImage()
+        let serviceForFetchingImage = ImageDownloadServiceImpl()
         let urlString = user.image?.urlData?.url
         urlString
             .flatMap(URL.init(string:))

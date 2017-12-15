@@ -13,11 +13,15 @@ class ImageDownloadServiceImpl{
     
     let defaultSession = URLSession(configuration: .ephemeral)
     var dataTask: URLSessionDataTask?
+    
+    
+    
+    
     // MARK: -
     // MARK: Open
     
     open func fetchImage(url: URL, complection: @escaping (UIImage?) -> ()){
-        dataTask = defaultSession.dataTask(with: url){ data, response, error in
+        dataTask = defaultSession.dataTask(with: url) { data, response, error in
             error.do{
                 print("URLSession error: ", $0)
                 return
@@ -28,7 +32,7 @@ class ImageDownloadServiceImpl{
                 complection(image)
             }
         }
-            
+        
         dataTask?.resume()
     }
 }
