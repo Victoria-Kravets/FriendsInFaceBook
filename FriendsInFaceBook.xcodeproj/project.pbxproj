@@ -20,6 +20,9 @@
 		75449BFF1FD59FA500CCDB9F /* MockSocialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75449BFE1FD59FA500CCDB9F /* MockSocialService.swift */; };
 		754D05061FE40BAE007AFDE7 /* NetworkServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754D05051FE40BAE007AFDE7 /* NetworkServiceImpl.swift */; };
 		754D05081FE40BDB007AFDE7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754D05071FE40BDB007AFDE7 /* NetworkService.swift */; };
+		754D050A1FE40D55007AFDE7 /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754D05091FE40D55007AFDE7 /* NetworkTask.swift */; };
+		754D050C1FE42D3D007AFDE7 /* ImageDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754D050B1FE42D3D007AFDE7 /* ImageDownloadService.swift */; };
+		754D050F1FE42D80007AFDE7 /* CancellableProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754D050E1FE42D80007AFDE7 /* CancellableProperty.swift */; };
 		7555D4D61FD1A18E00FCA77A /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7555D4D31FD1A18400FCA77A /* Realm.framework */; };
 		7555D4D71FD1A18E00FCA77A /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7555D4D31FD1A18400FCA77A /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7555D4D81FD1A18E00FCA77A /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7555D4D21FD1A18400FCA77A /* RealmSwift.framework */; };
@@ -50,8 +53,7 @@
 		75CFFC811FCC724300D99385 /* FriendsInFaceBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFFC801FCC724300D99385 /* FriendsInFaceBookTests.swift */; };
 		75D292A71FD426110032F9BD /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D292A61FD426110032F9BD /* Friends.swift */; };
 		75D292A91FD450D70032F9BD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D292A81FD450D70032F9BD /* Constants.swift */; };
-		75E0B9D71FDAB8AA00F0325D /* ServiceForFetchingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0B9D61FDAB8AA00F0325D /* ServiceForFetchingImage.swift */; };
-		75E0B9D81FDABB8300F0325D /* ServiceForFetchingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0B9D61FDAB8AA00F0325D /* ServiceForFetchingImage.swift */; };
+		75E0B9D71FDAB8AA00F0325D /* ImageDownloadServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0B9D61FDAB8AA00F0325D /* ImageDownloadServiceImpl.swift */; };
 		75FB1B891FD52C960066DCF2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFFC6A1FCC724300D99385 /* LoginViewController.swift */; };
 		75FB1B8A1FD52C960066DCF2 /* ListOfFriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752FFAAE1FCDC8E500ACA938 /* ListOfFriendsTableViewController.swift */; };
 		75FB1B8B1FD52C960066DCF2 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752FFAB01FCDE98C00ACA938 /* UserCell.swift */; };
@@ -118,6 +120,9 @@
 		75449BFE1FD59FA500CCDB9F /* MockSocialService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSocialService.swift; sourceTree = "<group>"; };
 		754D05051FE40BAE007AFDE7 /* NetworkServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceImpl.swift; sourceTree = "<group>"; };
 		754D05071FE40BDB007AFDE7 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		754D05091FE40D55007AFDE7 /* NetworkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTask.swift; sourceTree = "<group>"; };
+		754D050B1FE42D3D007AFDE7 /* ImageDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadService.swift; sourceTree = "<group>"; };
+		754D050E1FE42D80007AFDE7 /* CancellableProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellableProperty.swift; sourceTree = "<group>"; };
 		7555D4D21FD1A18400FCA77A /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		7555D4D31FD1A18400FCA77A /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		7569165A1FD6A75800808890 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -140,7 +145,7 @@
 		75CFFC821FCC724300D99385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75D292A61FD426110032F9BD /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
 		75D292A81FD450D70032F9BD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		75E0B9D61FDAB8AA00F0325D /* ServiceForFetchingImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceForFetchingImage.swift; sourceTree = "<group>"; };
+		75E0B9D61FDAB8AA00F0325D /* ImageDownloadServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadServiceImpl.swift; sourceTree = "<group>"; };
 		D70103541FD727CB002D0E6C /* Optional+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
 		D70103561FD73B84002D0E6C /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		D7C3E00F1FD9B74F006ACA47 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -184,6 +189,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75489E221FEA5CF3005AFDA5 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				754D05091FE40D55007AFDE7 /* NetworkTask.swift */,
+				754D05071FE40BDB007AFDE7 /* NetworkService.swift */,
+				754D05051FE40BAE007AFDE7 /* NetworkServiceImpl.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		75489E231FEA5D0E005AFDA5 /* ImageDownloadService */ = {
+			isa = PBXGroup;
+			children = (
+				75E0B9D61FDAB8AA00F0325D /* ImageDownloadServiceImpl.swift */,
+				754D050B1FE42D3D007AFDE7 /* ImageDownloadService.swift */,
+			);
+			path = ImageDownloadService;
+			sourceTree = "<group>";
+		};
+		754D050D1FE42D68007AFDE7 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				754D050E1FE42D80007AFDE7 /* CancellableProperty.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
 		7577A2671FD5E2020082F9A8 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,13 +263,12 @@
 		757BAC751FD5B6A8004FDD82 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				75489E231FEA5D0E005AFDA5 /* ImageDownloadService */,
+				75489E221FEA5CF3005AFDA5 /* NetworkService */,
 				7508DFD01FD4760C00A62241 /* ServiceForData.swift */,
 				7540782B1FD1AF1900A6E01C /* FacebookSocialService.swift */,
 				75449BFC1FD59ECE00CCDB9F /* SocialService.swift */,
 				75449BFE1FD59FA500CCDB9F /* MockSocialService.swift */,
-				75E0B9D61FDAB8AA00F0325D /* ServiceForFetchingImage.swift */,
-				754D05051FE40BAE007AFDE7 /* NetworkServiceImpl.swift */,
-				754D05071FE40BDB007AFDE7 /* NetworkService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -275,6 +306,7 @@
 		75CFFC671FCC724300D99385 /* FriendsInFaceBook */ = {
 			isa = PBXGroup;
 			children = (
+				754D050D1FE42D68007AFDE7 /* Types */,
 				D70103521FD727AB002D0E6C /* Library */,
 				7577A2681FD5E2740082F9A8 /* Staff */,
 				7577A2671FD5E2020082F9A8 /* Cells */,
@@ -535,7 +567,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75E0B9D81FDABB8300F0325D /* ServiceForFetchingImage.swift in Sources */,
 				75FE3E4A1FD8296600399B9C /* Optional+Extensions.swift in Sources */,
 				75FE3E4B1FD8296600399B9C /* Functions.swift in Sources */,
 				752C52121FD6D6CC0077B370 /* LoginView.swift in Sources */,
@@ -563,15 +594,18 @@
 				752FFAAF1FCDC8E500ACA938 /* ListOfFriendsTableViewController.swift in Sources */,
 				75449BFF1FD59FA500CCDB9F /* MockSocialService.swift in Sources */,
 				752FFAB31FCDEDB000ACA938 /* User.swift in Sources */,
-				75E0B9D71FDAB8AA00F0325D /* ServiceForFetchingImage.swift in Sources */,
+				75E0B9D71FDAB8AA00F0325D /* ImageDownloadServiceImpl.swift in Sources */,
+				754D050C1FE42D3D007AFDE7 /* ImageDownloadService.swift in Sources */,
 				754D05081FE40BDB007AFDE7 /* NetworkService.swift in Sources */,
 				D70103571FD73B84002D0E6C /* Functions.swift in Sources */,
 				D70103551FD727CB002D0E6C /* Optional+Extensions.swift in Sources */,
 				7540782C1FD1AF1900A6E01C /* FacebookSocialService.swift in Sources */,
+				754D050F1FE42D80007AFDE7 /* CancellableProperty.swift in Sources */,
 				75D292A71FD426110032F9BD /* Friends.swift in Sources */,
 				752FFAB11FCDE98C00ACA938 /* UserCell.swift in Sources */,
 				75CFFC6B1FCC724300D99385 /* LoginViewController.swift in Sources */,
 				75449BFD1FD59ECE00CCDB9F /* SocialService.swift in Sources */,
+				754D050A1FE40D55007AFDE7 /* NetworkTask.swift in Sources */,
 				7508DFD11FD4760C00A62241 /* ServiceForData.swift in Sources */,
 				75CFFC691FCC724300D99385 /* AppDelegate.swift in Sources */,
 				7569165B1FD6A75800808890 /* LoginView.swift in Sources */,
