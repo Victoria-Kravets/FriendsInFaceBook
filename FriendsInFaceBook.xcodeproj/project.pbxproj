@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75060D59200D2361002ACA89 /* FriendsInFaceBookSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75060D58200D2361002ACA89 /* FriendsInFaceBookSpec.swift */; };
 		7508DFD11FD4760C00A62241 /* ServiceForData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7508DFD01FD4760C00A62241 /* ServiceForData.swift */; };
 		752C52121FD6D6CC0077B370 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7569165A1FD6A75800808890 /* LoginView.swift */; };
 		752C52131FD6D6CC0077B370 /* FriendsInFaceBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFFC801FCC724300D99385 /* FriendsInFaceBookTests.swift */; };
@@ -97,6 +98,7 @@
 		2544222C62DD6238AFC97BCF /* Pods_FriendsInFaceBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriendsInFaceBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A7356983059FF22E368860 /* Pods-FriendsInFaceBookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendsInFaceBookUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FriendsInFaceBookUITests/Pods-FriendsInFaceBookUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7252D9723766B1FA3CF9A971 /* Pods-FriendsInFaceBookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendsInFaceBookTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FriendsInFaceBookTests/Pods-FriendsInFaceBookTests.release.xcconfig"; sourceTree = "<group>"; };
+		75060D58200D2361002ACA89 /* FriendsInFaceBookSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsInFaceBookSpec.swift; sourceTree = "<group>"; };
 		7508DFD01FD4760C00A62241 /* ServiceForData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceForData.swift; sourceTree = "<group>"; };
 		752FFAAE1FCDC8E500ACA938 /* ListOfFriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfFriendsTableViewController.swift; sourceTree = "<group>"; };
 		752FFAB01FCDE98C00ACA938 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 			children = (
 				75CFFC801FCC724300D99385 /* FriendsInFaceBookTests.swift */,
 				75CFFC821FCC724300D99385 /* Info.plist */,
+				75060D58200D2361002ACA89 /* FriendsInFaceBookSpec.swift */,
 			);
 			path = FriendsInFaceBookTests;
 			sourceTree = "<group>";
@@ -784,6 +787,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75CFFC811FCC724300D99385 /* FriendsInFaceBookTests.swift in Sources */,
+				75060D59200D2361002ACA89 /* FriendsInFaceBookSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
