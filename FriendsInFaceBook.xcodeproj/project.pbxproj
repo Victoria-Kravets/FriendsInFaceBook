@@ -36,6 +36,12 @@
 		75EA3F5B202090730053A423 /* SocialServiceImplSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EA3F5A202090730053A423 /* SocialServiceImplSpec.swift */; };
 		7D281C86EEE5A0432A298403 /* Pods_FriendsInFaceBookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A520800E0F00C2FE3E55D560 /* Pods_FriendsInFaceBookTests.framework */; };
 		83FAC2863E3FD9DDE925196D /* Pods_FriendsInFaceBookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C3C3507D297C3CABC1DB67 /* Pods_FriendsInFaceBookUITests.framework */; };
+		8440896720766B850048560D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440896620766B850048560D /* Persistence.swift */; };
+		8440896920766C190048560D /* RealmPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440896820766C190048560D /* RealmPersistence.swift */; };
+		8440896B2076B37D0048560D /* UserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440896A2076B37D0048560D /* UserFactory.swift */; };
+		8440896F2076B5FB0048560D /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440896D2076B5FB0048560D /* UserViewController.swift */; };
+		844089702076B5FB0048560D /* UserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8440896E2076B5FB0048560D /* UserViewController.xib */; };
+		844089722076B60F0048560D /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844089712076B60F0048560D /* UserView.swift */; };
 		8478310C203CD4FE00F8F991 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478310B203CD4FE00F8F991 /* Atomic.swift */; };
 		8478310E203D9E6600F8F991 /* AtomicSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478310D203D9E6600F8F991 /* AtomicSpec.swift */; };
 		84783110203DC0DD00F8F991 /* ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478310F203DC0DD00F8F991 /* ID.swift */; };
@@ -141,6 +147,12 @@
 		75E0B9D61FDAB8AA00F0325D /* ImageDownloadServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadServiceImpl.swift; sourceTree = "<group>"; };
 		75EA3F56201F35440053A423 /* ServiceTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTask.swift; sourceTree = "<group>"; };
 		75EA3F5A202090730053A423 /* SocialServiceImplSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialServiceImplSpec.swift; sourceTree = "<group>"; };
+		8440896620766B850048560D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		8440896820766C190048560D /* RealmPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPersistence.swift; sourceTree = "<group>"; };
+		8440896A2076B37D0048560D /* UserFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFactory.swift; sourceTree = "<group>"; };
+		8440896D2076B5FB0048560D /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		8440896E2076B5FB0048560D /* UserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserViewController.xib; sourceTree = "<group>"; };
+		844089712076B60F0048560D /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		8478310B203CD4FE00F8F991 /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
 		8478310D203D9E6600F8F991 /* AtomicSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicSpec.swift; sourceTree = "<group>"; };
 		8478310F203DC0DD00F8F991 /* ID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ID.swift; sourceTree = "<group>"; };
@@ -273,6 +285,7 @@
 		757BAC741FD5B66D004FDD82 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8440896C2076B5D80048560D /* UserViewController */,
 				752FFAAE1FCDC8E500ACA938 /* ListOfFriendsTableViewController.swift */,
 				75CFFC6A1FCC724300D99385 /* LoginViewController.swift */,
 			);
@@ -404,6 +417,25 @@
 			path = SocialService;
 			sourceTree = "<group>";
 		};
+		8440896520766B640048560D /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				8440896620766B850048560D /* Persistence.swift */,
+				8440896820766C190048560D /* RealmPersistence.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		8440896C2076B5D80048560D /* UserViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8440896D2076B5FB0048560D /* UserViewController.swift */,
+				8440896E2076B5FB0048560D /* UserViewController.xib */,
+				844089712076B60F0048560D /* UserView.swift */,
+			);
+			path = UserViewController;
+			sourceTree = "<group>";
+		};
 		8478312F203E0DE200F8F991 /* ID */ = {
 			isa = PBXGroup;
 			children = (
@@ -440,6 +472,7 @@
 		84B90E7C203C4E85009F5168 /* ActiveRecord */ = {
 			isa = PBXGroup;
 			children = (
+				8440896520766B640048560D /* Persistence */,
 				84DB6FC9203C705D003FD11F /* User */,
 				84B90E7D203C4EAC009F5168 /* RLMModel.swift */,
 				84B90E7F203C4F46009F5168 /* Model.swift */,
@@ -452,6 +485,7 @@
 			children = (
 				84DB6FCA203C7115003FD11F /* User.swift */,
 				84DB6FCC203C7145003FD11F /* RLMUser.swift */,
+				8440896A2076B37D0048560D /* UserFactory.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -713,6 +747,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75CFFC761FCC724300D99385 /* LaunchScreen.storyboard in Resources */,
+				844089702076B5FB0048560D /* UserViewController.xib in Resources */,
 				75CFFC731FCC724300D99385 /* Assets.xcassets in Resources */,
 				75CFFC6E1FCC724300D99385 /* Main.storyboard in Resources */,
 			);
@@ -941,8 +976,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				758156BC201E60D90050AD31 /* SocialService.swift in Sources */,
+				8440896F2076B5FB0048560D /* UserViewController.swift in Sources */,
 				84CBC5B22039D31000AD29CD /* Realm+Extensions.swift in Sources */,
 				D7AAF22C1FEA7E1D001E0C3B /* ImageView.swift in Sources */,
+				8440896720766B850048560D /* Persistence.swift in Sources */,
 				752FFAAF1FCDC8E500ACA938 /* ListOfFriendsTableViewController.swift in Sources */,
 				8478310C203CD4FE00F8F991 /* Atomic.swift in Sources */,
 				D79BC2AF1FE2799E00F0DD87 /* ImageLoadService.swift in Sources */,
@@ -965,6 +1002,7 @@
 				75EA3F57201F35440053A423 /* ServiceTask.swift in Sources */,
 				752FFAB11FCDE98C00ACA938 /* UserCell.swift in Sources */,
 				75CFFC6B1FCC724300D99385 /* LoginViewController.swift in Sources */,
+				844089722076B60F0048560D /* UserView.swift in Sources */,
 				84DB6FCB203C7115003FD11F /* User.swift in Sources */,
 				D7AAF2221FEA6C67001E0C3B /* ImageModel.swift in Sources */,
 				D7AAF2331FEA8A5C001E0C3B /* Result.swift in Sources */,
@@ -976,11 +1014,13 @@
 				75CFFC691FCC724300D99385 /* AppDelegate.swift in Sources */,
 				7569165B1FD6A75800808890 /* LoginView.swift in Sources */,
 				84DB6FCD203C7145003FD11F /* RLMUser.swift in Sources */,
+				8440896920766C190048560D /* RealmPersistence.swift in Sources */,
 				75D292A91FD450D70032F9BD /* Constants.swift in Sources */,
 				D79BC2B11FE27A6900F0DD87 /* NetworkTask.swift in Sources */,
 				D7AAF2351FEA8E58001E0C3B /* PrecedenceGroups.swift in Sources */,
 				D79BC2B91FE2845A00F0DD87 /* CancellableProperty.swift in Sources */,
 				758156B8201DD28D0050AD31 /* FacebookApi.swift in Sources */,
+				8440896B2076B37D0048560D /* UserFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
