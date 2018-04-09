@@ -36,6 +36,7 @@
 		75EA3F5B202090730053A423 /* SocialServiceImplSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EA3F5A202090730053A423 /* SocialServiceImplSpec.swift */; };
 		7D281C86EEE5A0432A298403 /* Pods_FriendsInFaceBookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A520800E0F00C2FE3E55D560 /* Pods_FriendsInFaceBookTests.framework */; };
 		83FAC2863E3FD9DDE925196D /* Pods_FriendsInFaceBookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C3C3507D297C3CABC1DB67 /* Pods_FriendsInFaceBookUITests.framework */; };
+		843200D0207B9C2C00EF1681 /* PersistenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843200CF207B9C2C00EF1681 /* PersistenceSpec.swift */; };
 		8440896720766B850048560D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440896620766B850048560D /* Persistence.swift */; };
 		8440896920766C190048560D /* RealmPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440896820766C190048560D /* RealmPersistence.swift */; };
 		8440896B2076B37D0048560D /* UserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440896A2076B37D0048560D /* UserFactory.swift */; };
@@ -147,6 +148,7 @@
 		75E0B9D61FDAB8AA00F0325D /* ImageDownloadServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadServiceImpl.swift; sourceTree = "<group>"; };
 		75EA3F56201F35440053A423 /* ServiceTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTask.swift; sourceTree = "<group>"; };
 		75EA3F5A202090730053A423 /* SocialServiceImplSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialServiceImplSpec.swift; sourceTree = "<group>"; };
+		843200CF207B9C2C00EF1681 /* PersistenceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceSpec.swift; sourceTree = "<group>"; };
 		8440896620766B850048560D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		8440896820766C190048560D /* RealmPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPersistence.swift; sourceTree = "<group>"; };
 		8440896A2076B37D0048560D /* UserFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFactory.swift; sourceTree = "<group>"; };
@@ -417,6 +419,14 @@
 			path = SocialService;
 			sourceTree = "<group>";
 		};
+		843200CE207B9C1300EF1681 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				843200CF207B9C2C00EF1681 /* PersistenceSpec.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
 		8440896520766B640048560D /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
@@ -456,6 +466,7 @@
 		847831332043FB3600F8F991 /* ActiveRecord */ = {
 			isa = PBXGroup;
 			children = (
+				843200CE207B9C1300EF1681 /* Persistence */,
 				847831342043FB4C00F8F991 /* ModelSpec.swift */,
 			);
 			path = ActiveRecord;
@@ -1028,6 +1039,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843200D0207B9C2C00EF1681 /* PersistenceSpec.swift in Sources */,
 				75AD49C2200D639F009269FD /* CancellablePropertySpec.swift in Sources */,
 				752C21CF201A19F5009D7B0F /* CallSpyMatcher.swift in Sources */,
 				847831382043FBE800F8F991 /* IDProviderSpec.swift in Sources */,

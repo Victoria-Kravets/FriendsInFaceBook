@@ -134,14 +134,14 @@ class FunctionsSpec: QuickSpec {
             }
         }
 
-        describe("typeString") {
-            it("result value should be equal 3 when using function flip") {
-                let user = User(id: ID(12345))
-                let  userID = "\(user.id.value)_\(typeString(User.self).lowercased())"
-                
-                expect(userID).to(equal("12345_user"))
-            }
-        }
+//        describe("typeString") {
+//            it("result value should be equal 3 when using function flip") {
+//                let user = User(id: ID(12345))
+//                let  userID = "\(user.id.value)_\(typeString(User.self).lowercased())"
+//                
+//                expect(userID).to(equal("12345_user"))
+//            }
+//        }
     }
 }
 
