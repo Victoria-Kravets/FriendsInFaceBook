@@ -13,8 +13,31 @@ import Nimble
 
 class ModelSpec: QuickSpec {
     override func spec() {
+        let id = ID(1)
+        let model = Model(id: id, persistence: RealmPersistence<RLMModel>())
+        
         describe("ModelSpec") {
-            context("when using Nimble and Quick") {
+            context("id") {
+                it("should pass") {
+                    expect(model.id.value).to(equal(id.value))
+                }
+            }
+            
+            context("storage") {
+                it("should pass") {
+                    expect(model.storage.realm?.isEmpty).to(beFalse())
+                }
+            }
+            
+            context("persistence") {
+                it("should pass") {
+                    let resultModel = model.persistence.read(id: id)
+                    let modelId = "1_realmpersistence<rlmmodel>"
+                    expect(resultModel.id).to(equal(modelId))
+                }
+            }
+            
+            context("init") {
                 it("should pass") {
                     
                     expect(true).to(beTrue())

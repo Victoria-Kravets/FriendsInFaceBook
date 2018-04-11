@@ -52,6 +52,6 @@ public class UserImpl<Persistence: Persistable>: Model<Persistence>, User where 
         let persistence = self.persistence
         
         persistence.write(self.name, to: &storage.name)
-        persistence.write(self.name, to: &storage.name)
+        persistence.write(self.age, to: &storage.age)
     }
 }

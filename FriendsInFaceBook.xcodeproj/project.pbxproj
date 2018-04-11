@@ -37,6 +37,7 @@
 		7D281C86EEE5A0432A298403 /* Pods_FriendsInFaceBookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A520800E0F00C2FE3E55D560 /* Pods_FriendsInFaceBookTests.framework */; };
 		83FAC2863E3FD9DDE925196D /* Pods_FriendsInFaceBookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C3C3507D297C3CABC1DB67 /* Pods_FriendsInFaceBookUITests.framework */; };
 		843200D0207B9C2C00EF1681 /* PersistenceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843200CF207B9C2C00EF1681 /* PersistenceSpec.swift */; };
+		843EE239207D04580015E90E /* UserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843EE238207D04580015E90E /* UserSpec.swift */; };
 		8440896720766B850048560D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440896620766B850048560D /* Persistence.swift */; };
 		8440896920766C190048560D /* RealmPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440896820766C190048560D /* RealmPersistence.swift */; };
 		8440896B2076B37D0048560D /* UserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440896A2076B37D0048560D /* UserFactory.swift */; };
@@ -149,6 +150,7 @@
 		75EA3F56201F35440053A423 /* ServiceTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTask.swift; sourceTree = "<group>"; };
 		75EA3F5A202090730053A423 /* SocialServiceImplSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialServiceImplSpec.swift; sourceTree = "<group>"; };
 		843200CF207B9C2C00EF1681 /* PersistenceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceSpec.swift; sourceTree = "<group>"; };
+		843EE238207D04580015E90E /* UserSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSpec.swift; sourceTree = "<group>"; };
 		8440896620766B850048560D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		8440896820766C190048560D /* RealmPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPersistence.swift; sourceTree = "<group>"; };
 		8440896A2076B37D0048560D /* UserFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFactory.swift; sourceTree = "<group>"; };
@@ -468,6 +470,7 @@
 			children = (
 				843200CE207B9C1300EF1681 /* Persistence */,
 				847831342043FB4C00F8F991 /* ModelSpec.swift */,
+				843EE238207D04580015E90E /* UserSpec.swift */,
 			);
 			path = ActiveRecord;
 			sourceTree = "<group>";
@@ -1052,6 +1055,7 @@
 				75EA3F5B202090730053A423 /* SocialServiceImplSpec.swift in Sources */,
 				75AD49C6200E14FA009269FD /* Optional+ExtensionsSpec.swift in Sources */,
 				D7B5231F1FF6B6DB004FBB32 /* ResultSpec.swift in Sources */,
+				843EE239207D04580015E90E /* UserSpec.swift in Sources */,
 				84CBC5B62039E13D00AD29CD /* WeakBoxSpec.swift in Sources */,
 				75060D73200D42E4002ACA89 /* TupleSpec.swift in Sources */,
 				75479D3C2019F8A7000536DF /* CallSpy.swift in Sources */,
