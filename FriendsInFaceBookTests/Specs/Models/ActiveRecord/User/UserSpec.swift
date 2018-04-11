@@ -26,13 +26,13 @@ class UserSpec: QuickSpec {
         
         describe("UserSpec") {
             context("name") {
-                it("should pass") {
+                it("should pass when userName isn't nil") {
                     expect(user.name).to(equal(name))
                 }
             }
             
             context("age") {
-                it("should pass") {
+                it("should pass when userAge isn't nil") {
                     expect(user.age).to(equal(age))
                 }
             }

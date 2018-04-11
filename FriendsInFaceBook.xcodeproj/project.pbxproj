@@ -44,6 +44,7 @@
 		8440896F2076B5FB0048560D /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440896D2076B5FB0048560D /* UserViewController.swift */; };
 		844089702076B5FB0048560D /* UserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8440896E2076B5FB0048560D /* UserViewController.xib */; };
 		844089722076B60F0048560D /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844089712076B60F0048560D /* UserView.swift */; };
+		8445B1CE207DFF12004BE49A /* UserFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8445B1CD207DFF12004BE49A /* UserFactorySpec.swift */; };
 		8478310C203CD4FE00F8F991 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478310B203CD4FE00F8F991 /* Atomic.swift */; };
 		8478310E203D9E6600F8F991 /* AtomicSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478310D203D9E6600F8F991 /* AtomicSpec.swift */; };
 		84783110203DC0DD00F8F991 /* ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8478310F203DC0DD00F8F991 /* ID.swift */; };
@@ -157,6 +158,7 @@
 		8440896D2076B5FB0048560D /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		8440896E2076B5FB0048560D /* UserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserViewController.xib; sourceTree = "<group>"; };
 		844089712076B60F0048560D /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		8445B1CD207DFF12004BE49A /* UserFactorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFactorySpec.swift; sourceTree = "<group>"; };
 		8478310B203CD4FE00F8F991 /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
 		8478310D203D9E6600F8F991 /* AtomicSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicSpec.swift; sourceTree = "<group>"; };
 		8478310F203DC0DD00F8F991 /* ID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ID.swift; sourceTree = "<group>"; };
@@ -448,6 +450,15 @@
 			path = UserViewController;
 			sourceTree = "<group>";
 		};
+		8445B1CC207DFEF3004BE49A /* User */ = {
+			isa = PBXGroup;
+			children = (
+				843EE238207D04580015E90E /* UserSpec.swift */,
+				8445B1CD207DFF12004BE49A /* UserFactorySpec.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		8478312F203E0DE200F8F991 /* ID */ = {
 			isa = PBXGroup;
 			children = (
@@ -468,9 +479,9 @@
 		847831332043FB3600F8F991 /* ActiveRecord */ = {
 			isa = PBXGroup;
 			children = (
+				8445B1CC207DFEF3004BE49A /* User */,
 				843200CE207B9C1300EF1681 /* Persistence */,
 				847831342043FB4C00F8F991 /* ModelSpec.swift */,
-				843EE238207D04580015E90E /* UserSpec.swift */,
 			);
 			path = ActiveRecord;
 			sourceTree = "<group>";
@@ -1042,6 +1053,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8445B1CE207DFF12004BE49A /* UserFactorySpec.swift in Sources */,
 				843200D0207B9C2C00EF1681 /* PersistenceSpec.swift in Sources */,
 				75AD49C2200D639F009269FD /* CancellablePropertySpec.swift in Sources */,
 				752C21CF201A19F5009D7B0F /* CallSpyMatcher.swift in Sources */,
