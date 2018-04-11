@@ -17,7 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
-        // Add any custom logic here.
+
+        let user = UserRealmFactory().user()
+        
+        if user.name == nil {
+            user.name = "Victoria"
+            user.age = 24
+        }
+        
+        let controller = UserViewController()
+        controller.user = user
+        
+        self.window?.rootViewController = controller
+        
         return true
     }
     
